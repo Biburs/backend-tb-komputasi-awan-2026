@@ -25,7 +25,7 @@ app.get('/health', async (req, res) => {
       message: 'Backend is running',
       database: 'connected',
       student: {
-        name: 'Ihsan Habiburrohim',
+        name: 'Ihsan Auliya Habiburrohim',
         nim: '2411523022'
       }
     });
@@ -35,7 +35,7 @@ app.get('/health', async (req, res) => {
       message: 'Backend is running, but database is not connected',
       database: 'disconnected',
       student: {
-        name: 'Ihsan Habiburrohim',
+        name: 'Ihsan Auliya Habiburrohim',
         nim: '2411523022'
       }
     });
@@ -48,7 +48,7 @@ app.get('/health', async (req, res) => {
 app.get('/schema', (req, res) => {
   res.json({
     student: {
-      name: 'Ihsan Habiburrohim',
+      name: 'Ihsan Auliya Habiburrohim',
       nim: '2411523022'
     },
     resource: {
