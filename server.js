@@ -12,6 +12,15 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.json({
+    status: 'success',
+    message: 'Backend API Obat Apotek - TB Cloud Computing 2026',
+    student: { name: 'Ihsan Habiburrohim', nim: '2411523022' },
+    endpoints: ['/health', '/schema', '/obat']
+  });
+});
+
 // ============================================================
 // GET /health
 // ============================================================
